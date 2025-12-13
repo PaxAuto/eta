@@ -1,0 +1,10 @@
+************* Module eta_component.eta_node
+eta_component/eta_node.py:102:0: C0305: Trailing newlines (trailing-newlines)
+eta_component/eta_node.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+eta_component/eta_node.py:10:0: C0115: Missing class docstring (missing-class-docstring)
+eta_component/eta_node.py:92:0: C0116: Missing function or method docstring (missing-function-docstring)
+eta_component/eta_node.py:7:0: C0411: standard import "math" should be placed before third party imports "rclpy", "rclpy.node.Node", "nav_msgs.msg.Path", "ackermann_msgs.msg.AckermannDrive", "std_msgs.msg.Int32" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 9.11/10
+
