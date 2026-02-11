@@ -1,6 +1,8 @@
+from glob import glob
+import os
 from setuptools import find_packages, setup
 
-package_name = 'eta_component'
+package_name = 'eta'
 
 setup(
     name=package_name,
@@ -10,17 +12,18 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name), glob('launch/*launch.py'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='mahitha',
-    maintainer_email='mah5338s@hs-coburg.de',
+    maintainer='surendra8466',
+    maintainer_email='sur7933s@hs-coburg.de',
     description='TODO: Package description',
-    license='TODO: License declaration',
+    license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'eta_node = eta_component.eta_node:main',
+                'eta = eta.eta:main',
         ],
     },
 )
